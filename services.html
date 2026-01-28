@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Hello Ink</title>
+  <link rel="icon" href="images/hello-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    /* Base styles */
+body {
+  margin: 0;
+  font-family: 'Google Sans Flex';
+  background: #fefefe;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-family: 'Lekton';
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff2828; /* red accent */
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+
+   background-image:
+    radial-gradient(rgba(255, 131, 152, 0.231) 2.5px, transparent 0);
+  background-size: 24px 24px;
+
+}
+
+.services-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.services-content {
+  background: white;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.services-content h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.services-item img {
+  width: 50%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.services-text {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-text h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222;
+  text-align: left;
+}
+
+.services-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: left;
+}
+
+
+    @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+    @media (max-width: 768px) {
+  .services-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .services-item img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+  }
+
+  .services-text {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .services-text h2,
+  .services-text p {
+    text-align: left;
+  }
+}
+
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
+  }
+
+  .lightbox:target {
+    display: flex;
+  }
+
+
+
+
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+  </style>
+  
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: #000;">Hello Ink.*</a></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+        <li><a href="policies.html">Policies</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="services-main">
+    <section class="services-content">
+      <h1>Services</h1>
+  
+      <div class="services-item">
+        <img src="images/clients.png" alt="Client Pricing" /> 
+        <div class="services-text">
+          <h2>For Clients</h2>
+          <p>
+            We offer full booking coordination and in-person interpretation for clients getting tattoos in Korea. 
+            Clients can book up to one month in advance and minimum two weeks before the appointment. Please 
+            check our <a href="policies.html" style="text-decoration: none; 
+            color: #000;" onmouseover="this.style.color='#ff2828';"
+            onmouseout="this.style.color='#000';" >policies</a> before booking.
+          </p>
+          <p>
+            <a href="how-to-book.html" style="text-decoration: none; color: #999;">Book now</a>
+          </p>
+        </div>
+      </div>
+  
+      <div class="services-item">
+        <img src="images/artists.png" alt="Artist Pricing" />
+        <div class="services-text">
+          <h2>타투 아티스트를 위한 서비스</h2>
+          <p>
+            외국인 고객과의 예약이 있는 타투 아티스트 분들을 위한 현장 통역 서비스를 제공합니다.
+            예약은 최대 한 달 전부터, 최소 2주 전까지 가능합니다. 예약 전 반드시 저희 
+            <a href="policies.html" style="text-decoration: none; 
+                    color: #000;" onmouseover="this.style.color='#ff2828';" onmouseout="this.style.color='#555';">이용정책</a>을 확인해 주시기 바랍니다.
+          </p>
+          <p>
+            <a href="how-to-book.html" style="text-decoration: none; color: #999;">예약 바로가기</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hello Ink. All rights reserved.</p>
+  </footer>
+</body>
+</html>
