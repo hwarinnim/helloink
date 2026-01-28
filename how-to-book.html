@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Book - Hello Ink</title>
+  <link rel="icon" href="images/hello-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <style>
+    /* Base styles */
+body {
+  margin: 0;
+  font-family: 'Google Sans Flex';
+  background: #fefefe;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-family: 'Lekton';
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff2828; /* red accent */
+}
+
+
+    @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+    
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+
+  background-image:
+    radial-gradient(rgba(255, 131, 152, 0.231) 2.5px, transparent 0);
+  background-size: 24px 24px;
+
+}
+
+.about-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.about-content {
+  background: white;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+  </style>
+  
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: #000;">Hello Ink.*</a></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+        <li><a href="policies.html">Policies</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-main">
+    <section class="about-content">
+      <h1>How to Book</h1>
+      <p>
+      Please send an email to <a href="mailto:helloinkmanager@gmail.com" style="text-decoration: none; 
+                  color: #555;" onmouseover="this.style.color='#ff2828';" 
+                  onmouseout="this.style.color='#555';">helloinkmanager@gmail.com</a> with the following information:<br>
+      <ul>
+        <li>Your name</li>
+        <li>Your age</li>
+        <li>Your instagram handle</li>
+        <li>Tattoo artist’s name and instagram handle</li>
+        <li>Dates you are available</li>
+        <li>Is your tattoo flash or custom?</li>
+        <li>Tattoo description: including color, placement, left or right, and size</li>
+        <li>Reference images</li>
+        <li>Full booking only or include in-person interpretation?</li>
+        <li>Any other questions you have for us or your artist</li>
+
+      </ul>
+
+      By sending us an email to begin the booking process, you confirm that you have read and agreed to our 
+      <a href="policies.html" style="text-decoration: none; 
+                  color: #555;" onmouseover="this.style.color='#ff2828';" onmouseout="this.style.color='#555';">policies</a>. 
+      We'll reply within 1–2 business days to confirm availability.
+      </p>
+      <br><br>
+
+      <h1>예약 방법</h1>
+      <p>
+        헬로잉크 이메일 (<a href="mailto:helloinkmanager@gmail.com" style="text-decoration: none; 
+                          color: #555;" onmouseover="this.style.color='#ff2828';"
+          onmouseout="this.style.color='#555';">helloinkmanager@gmail.com</a>)로 
+        아래 정보를 기재하여 보내주세요:
+        
+        <ul>
+          <li>성함</li>
+          <li>인스타그램 아이디</li>
+          <li>세션 날짜 및 시간</li>
+          <li>통역 필요 시간</li>
+          <li>세션에 함께 타투 받는 고객 수</li>
+          <li>스튜디오 위치</li>
+        </ul>
+        이메일을 보내주시는 경우, 저희의 <a href="policies.html" style="text-decoration: none; 
+                            color: #555;" onmouseover="this.style.color='#ff2828';"
+          onmouseout="this.style.color='#555';">이용정책</a>을 읽고 이해하셨으며 동의하신 것으로 간주됩니다. 
+        영업일 기준 1~2일 이내에 연락드리겠습니다. 
+      </p>
+    </section>
+  </main>
+
+    <footer>
+      <p>© 2026 Hello Ink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
