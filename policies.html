@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policies - Hello Ink</title>
+  <link rel="icon" href="images/hello-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <style>
+    /* Base styles */
+body {
+  margin: 0;
+  font-family: 'Google Sans Flex';
+  background: #fefefe;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-family: 'Lekton';
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff2828; /* red accent */
+}
+
+
+    @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+    
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+
+  background-image:
+    radial-gradient(rgba(255, 131, 152, 0.231) 2.5px, transparent 0);
+  background-size: 24px 24px;
+
+}
+
+.about-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.about-content {
+  background: white;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+  </style>
+  
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: #000;">Hello Ink.*</a></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+        <li><a href="policies.html">Policies</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-main">
+    <section class="about-content">
+      <h1>Client Policies</h1>
+      <p>
+      Age Requirement
+        <ul>
+        <li>We only work with clients who are 19 years old or older.</li>
+        </ul>
+      Full Booking Service
+      <ul>
+        <li>Full payment must be made before we contact any artists.</li>
+        <li>If your chosen artist is unavailable or cancels, we offer one free
+          rebooking attempt with a second artist. A third
+          attempt will count as a new booking session.</li>
+        <li>If you cancel and wish to switch artists mid-process, each
+          new artist will also count as a new booking session.</li>
+        <li>Booking fees are per person. For group sessions,
+          each client must pay a separate booking fee.</li>
+        <li>Communication with artists is available for up to 1 week after the session.</li>
+      </ul>
+      In-Person Interpretation
+        <ul>
+          <li>Interpretation is only available if your booking was made through Hello Ink and your artist consents to having a
+          translator present.</li>
+          <li>Pre-payment is required. We calculate hours based on the artist’s time estimate.</li>
+          <li>Refunds are not available even if the session ends early.</li>
+          <li>If the session runs longer than expected, extra fees must be paid afterward via Wise or in cash (KRW). No change available.</li>
+          <li>All sessions are billed hourly, with a 10-minute grace period. Additional time beyond that is charged in 30-minute
+          blocks.</li>
+          <li>Interpretation is only available until 7:00 p.m.</li>
+          <li>For groups getting the same design: up to 3 people are covered by the base fee. For 4 or more, an additional 1-hour
+          fee is charged per person.</li>
+          <li>Sessions with different tattoo designs are considered separate bookings.</li>
+          <li>For clients getting multiple small tattoos in one session, the booking fee remains the same (1 session), but in-person
+          interpretation will be counted as a minimum of 2 hours, as it requires continuous support throughout.</li>
+          <li>For tattoos requiring multiple sessions, the initial booking fee covers coordination for the entire project. However,
+          in-person interpretation is charged separately for each session day.</li>
+        </ul>
+      Refunds & Cancellations
+        <ul>
+          <li>If we cancel, a full refund is issued.</li>
+          <li>If you cancel before we contact any artists, we can refund your payment.</li>
+          <li>After artist contact begins, refunds are no longer available.</li>
+          <li>No-shows will result in being ineligible for future services.</li>
+        </ul>
+      Artist Deposits
+        <ul>
+          <li>You can send your artist’s deposit through us for convenience.</li>
+          <li>We charge a ₩7,500 or $5 service fee to cover processing and currency conversion.</li>
+        </ul>
+      Artist Selection
+        <ul>
+          <li>We don’t choose tattoo artists for clients.</li>
+          <li>You choose your artist. We help you communicate and handle the process smoothly.</li>
+          <li>Our role is to coordinate bookings, provide communication support, and offer in-person help if needed.</li>
+        </ul>
+      Disclaimer
+        <ul>
+          <li>We are not responsible for the tattoo quality, healing process, or anything the artist says or does during your session.</li>
+        </ul>
+      Payments
+        <ul>
+          <li>We accept payments via Wise (USD) or cash (KRW). PayPal and credit cards are not currently supported.</li>
+          <li>If you live in Korea and have a Korean bank account, we can provide our account info upon request.</li>
+        </ul>
+      Punctuality
+        <ul>
+          <li>Please arrive on time. Clients who arrive more than 15 minutes late without notice will be charged a $30 (₩45,000) late
+          fee.</li>
+          <li>If they are more than 30 minutes late, the translator may leave and no refunds will be issued—regardless of prior
+          notice. We appreciate your understanding and respect for our time.</li>
+          <li>Please note: Some tattoo artists have a 15-minute late policy and may cancel the session after that time. If this
+          happens, it is considered out of our hands and no refunds will be issued.</li>
+        </ul>
+
+      </p>
+      <br><br>
+
+      <h1>이용 정책</h1>
+      <p>
+        <ul>
+          <li>통역 기본 요금(첫 1시간)은 예약 시 선불로 결제됩니다.</li>
+          <li>추가 시간 요금은 세션 종료 후 정산됩니다.</li>
+          <li>모든 통역 세션은 시간당 요금으로 계산되며, 10분 이내 초과 시에는 추가요금 없이 진행됩니다. 10분을 초과할 경우, 30분 단위로 추가 요금이 발생합니다.</li>
+          <li>모든 결제는 계좌 이체로 진행됩니다.</li>
+          <li>예약 취소 시 환불은 불가합니다.</li>
+          <li>통역 가능 시간은 저녁 7시까지입니다.</li>
+          <li>통역 요금은 타투 받는 고객 1인 기준입니다. 고객 2인 이상일 경우, 1인당 기본 요금이 추가됩니다.</li>
+          <li>통역 서비스는 타투 아티스트 1인 기준으로 제공됩니다.</li>
+        </ul>
+      </p>
+    </section>
+  </main>
+
+    <footer>
+      <p>© 2026 Hello Ink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
